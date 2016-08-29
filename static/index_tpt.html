@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Martín Quiroga</title>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <!-- end -->
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Cantarell:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script src="responsive-nav/responsive-nav.js"></script>
+    </head>
+    <body>
+        <div id="menu-bar">
+            <span id="title">MARTÍN <span class="q">Q</span>UIROGA</span>
+            <nav class="nav-collapse">
+                <ul>
+                    <li><a href="/">portfolio</a></li>
+                    <li><a href="about">about</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="upper-container">
+            {% block container %}{% end %}
+        </div>
+        <div style="position:relative" id="footer">
+            ©2014 Martín Quiroga
+        </div>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                var nav = responsiveNav(".nav-collapse");
+                //alert('before menu');
+                //$('#menu').slicknav();
+            });
+        </script>
+    </body>
+</html>
+    
+

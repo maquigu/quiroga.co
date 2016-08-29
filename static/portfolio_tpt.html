@@ -1,0 +1,16 @@
+{% extends "../static/index_tpt.html" %}
+    {% block container %}
+            <div id="timeline-embed"></div>
+            <script type="text/javascript">
+                var timeline_config = {
+                    width:              '100%',
+                    height:             '600',
+                    source:             'https://docs.google.com/spreadsheet/pub?key=0Ag7h_eDiyxuXdElZOWxQdTRKREg3TFRKX0d2Ul91T0E&output=html',
+                    embed_id:           'timeline-embed',               //OPTIONAL USE A DIFFERENT DIV ID FOR EMBED
+                    start_at_end:       true,                          //OPTIONAL START AT LATEST DATE
+                    hash_bookmark:      true,                           //OPTIONAL LOCATION BAR HASHES
+                    font:               'Arvo-PTSans',             //OPTIONAL FONT
+                }
+            </script>
+            <script type="text/javascript" src="http://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"></script>
+    {% end %}
